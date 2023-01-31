@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contributing &mdash; orthoflow 0.1.0 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/graphviz.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/clipboard.min.js"></script>
+        <script src="../_static/copybutton.js"></script>
+        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Citation and Attribution" href="citation.html" />
+    <link rel="prev" title="Report Module" href="report.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> orthoflow
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="beginner_tutorial.html">Beginner Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="beginner_tutorial.html#quick-start-guide">Quick start guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="advanced_tutorial.html">Advanced Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="workflow.html">Workflow</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Contributing</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#testing">Testing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#git-commits">Git Commits</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#documentation">Documentation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#code-of-conduct">Code of Conduct</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#our-pledge">Our Pledge</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#our-standards">Our Standards</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#enforcement-responsibilities">Enforcement Responsibilities</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#scope">Scope</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#enforcement">Enforcement</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#enforcement-guidelines">Enforcement Guidelines</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#correction">1. Correction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#warning">2. Warning</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#temporary-ban">3. Temporary Ban</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#permanent-ban">4. Permanent Ban</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#attribution">Attribution</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="citation.html">Citation and Attribution</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">orthoflow</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Contributing</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/main/contributing.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  
+<style>
+/* CSS overrides for sphinx_rtd_theme */
+
+/* 24px margin */
+.nbinput.nblast.container,
+.nboutput.nblast.container {
+    margin-bottom: 19px;  /* padding has already 5px */
+}
+
+/* ... except between code cells! */
+.nblast.container + .nbinput.container {
+    margin-top: -19px;
+}
+
+.admonition > p:before {
+    margin-right: 4px;  /* make room for the exclamation icon */
+}
+
+/* Fix math alignment, see https://github.com/rtfd/sphinx_rtd_theme/pull/686 */
+.math {
+    text-align: unset;
+}
+</style>
+<section id="contributing">
+<h1>Contributing<a class="headerlink" href="#contributing" title="Permalink to this headline"></a></h1>
+<p>Code in this repository will be formatted with Snakefmt (<a class="reference external" href="https://github.com/snakemake/snakefmt">https://github.com/snakemake/snakefmt</a>).</p>
+<p>These practices are subject to change based on the decisions of the team.</p>
+<ul class="simple">
+<li><p>Structure the files according to the snakemake documentation (<a class="reference external" href="https://snakemake.readthedocs.io/en/stable/snakefiles/deployment.html">https://snakemake.readthedocs.io/en/stable/snakefiles/deployment.html</a>)</p></li>
+<li><p>Follow the Best Practices guidelines in the snakemake documentation (<a class="reference external" href="https://snakemake.readthedocs.io/en/stable/snakefiles/best_practices.html">https://snakemake.readthedocs.io/en/stable/snakefiles/best_practices.html</a>)</p></li>
+<li><p>Paths in <code class="docutils literal notranslate"><span class="pre">input</span></code> and <code class="docutils literal notranslate"><span class="pre">output</span></code> in rules are relative to the current working directory so that the user can specify a directory to snakemake with</p></li>
+<li><p>Use clear and explicit variable names. (e.g. <code class="docutils literal notranslate"><span class="pre">wildcards</span></code> is better than merely <code class="docutils literal notranslate"><span class="pre">w</span></code>)</p></li>
+<li><p>Reference params by keyword even if only one parameter is used in a rule (i.e. <code class="docutils literal notranslate"><span class="pre">{params.taxon}</span></code> instead of merely <code class="docutils literal notranslate"><span class="pre">{params}</span></code>).</p></li>
+<li><p>For Python scripts, do not use the <code class="docutils literal notranslate"><span class="pre">snakemake</span></code> local variable but pass information to the script via a commandline interface using typer and call the script with a shell command (e.g. <code class="docutils literal notranslate"><span class="pre">shell(&quot;python</span> <span class="pre">SCRIPT_DIR/&lt;script</span> <span class="pre">name&gt;.py</span> <span class="pre">...&quot;</span></code>).</p></li>
+<li><p>Place the <code class="docutils literal notranslate"><span class="pre">output</span></code> of a rule above the <code class="docutils literal notranslate"><span class="pre">input</span></code> because snakemake goes from output to input when creating the DAG.</p></li>
+</ul>
+<section id="testing">
+<h2>Testing<a class="headerlink" href="#testing" title="Permalink to this headline"></a></h2>
+<ul class="simple">
+<li><p>Tests must be added for any new rules before merging to the <code class="docutils literal notranslate"><span class="pre">master</span></code> branch.</p></li>
+<li><p>All tests must be passing before merging with the <code class="docutils literal notranslate"><span class="pre">master</span></code> branch.</p></li>
+<li><p>Tests should be placed in the <code class="docutils literal notranslate"><span class="pre">tests</span></code> directory of the root of the repository (NB. not in <cite>.tests</cite> which is the default snakemake testing directory)</p></li>
+<li><p>Tests can be autogenerated using <code class="docutils literal notranslate"><span class="pre">snakemake</span> <span class="pre">-c1</span> <span class="pre">--directory</span> <span class="pre">test-data/</span> <span class="pre">--conda-frontend</span> <span class="pre">conda</span> <span class="pre">--use-conda</span> <span class="pre">--generate-unit-tests</span> <span class="pre">$(pwd)/tests/unit</span></code>.</p></li>
+<li><p>Tests are automatically included in the CI/CD pipeline using Github actions.</p></li>
+<li><p>More info on testing with <a class="reference external" href="https://snakemake.readthedocs.io/en/stable/snakefiles/testing.html">https://snakemake.readthedocs.io/en/stable/snakefiles/testing.html</a>).</p></li>
+</ul>
+</section>
+<section id="git-commits">
+<h2>Git Commits<a class="headerlink" href="#git-commits" title="Permalink to this headline"></a></h2>
+<p>We use the <a class="reference external" href="https://robinpokorny.github.io/git3moji/">git3moji</a> standard for expressive git commit messages.
+Use one of the following five short emojis at the start of your of your git commit messages:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">:zap:</span></code> ⚡️ – Features and primary concerns</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">:bug:</span></code> 🐛 – Bugs and fixes</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">:tv:</span></code>  📺 – CI, tooling, and configuration</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">:cop:</span></code> 👮 – Tests and linting</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">:abc:</span></code> 🔤 – Documentation</p></li>
+</ul>
+<p>As far as possible, please keep your git commits granular and focussed on one thing at a time.
+Please cite an the number of a Github issue if it relates to your commit.</p>
+</section>
+<section id="documentation">
+<h2>Documentation<a class="headerlink" href="#documentation" title="Permalink to this headline"></a></h2>
+<ul class="simple">
+<li><p>Docstrings for Python functions should use the Google docstring convention (<a class="reference external" href="https://google.github.io/styleguide/pyguide.html#38-comments-and-docstrings">https://google.github.io/styleguide/pyguide.html#38-comments-and-docstrings</a>)</p></li>
+<li><p>Add docstrings should be added to each rule (conventions are still to be decided).</p></li>
+<li><p>Citations for dependencies or research used in any rule should be added in bibtex format to <code class="docutils literal notranslate"><span class="pre">docs/references.bib</span></code>.</p></li>
+<li><p>Documentation generated using sphinx and automatically deployed as part of the CI/CD pipeline.</p></li>
+<li><p>Should each module in the workflow should have its own page in the documentation?</p></li>
+<li><p>Docs should be written in reStructuredText.</p></li>
+<li><p>Each submodule corresponds to a page in the documentation and added to the table of contents tree (i.e. <code class="docutils literal notranslate"><span class="pre">toctree</span></code>) in the <code class="docutils literal notranslate"><span class="pre">index.rst</span></code> file.</p></li>
+</ul>
+<p>Files need to start with a heading for the section. The convention used here is to use the equals sign above and below the heading:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">===============</span>
+<span class="n">Section</span> <span class="n">Heading</span>
+<span class="o">===============</span>
+</pre></div>
+</div>
+<p>Subsections also use an equals sign but just below the heading:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Subsection</span> <span class="n">Heading</span>
+<span class="o">==================</span>
+</pre></div>
+</div>
+<p>Subsubsections have a single dash below the heading:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Subsubsection</span> <span class="n">Heading</span>
+<span class="o">---------------------</span>
+</pre></div>
+</div>
+<p>Try not to have any other sections within this but if it is necessary, use tildas below the heading:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Further</span> <span class="n">Subsection</span> <span class="n">Headings</span>
+<span class="o">~~~~~~~~~~~~~~~~~~~~~~~~~~~</span>
+</pre></div>
+</div>
+<p>Other information for using reStructuredText in Sphinx can be found here: <a class="reference external" href="https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#rst-primer">https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#rst-primer</a> and <a class="reference external" href="https://thomas-cokelaer.info/tutorials/sphinx/rest_syntax.html">https://thomas-cokelaer.info/tutorials/sphinx/rest_syntax.html</a>.</p>
+</section>
+<section id="code-of-conduct">
+<h2>Code of Conduct<a class="headerlink" href="#code-of-conduct" title="Permalink to this headline"></a></h2>
+<section id="our-pledge">
+<h3>Our Pledge<a class="headerlink" href="#our-pledge" title="Permalink to this headline"></a></h3>
+<p>We as members, contributors, and leaders pledge to make participation in our
+community a harassment-free experience for everyone, regardless of age, body
+size, visible or invisible disability, ethnicity, sex characteristics, gender
+identity and expression, level of experience, education, socio-economic status,
+nationality, personal appearance, race, caste, color, religion, or sexual
+identity and orientation.</p>
+<p>We pledge to act and interact in ways that contribute to an open, welcoming,
+diverse, inclusive, and healthy community.</p>
+</section>
+<section id="our-standards">
+<h3>Our Standards<a class="headerlink" href="#our-standards" title="Permalink to this headline"></a></h3>
+<p>Examples of behavior that contributes to a positive environment for our
+community include:</p>
+<ul class="simple">
+<li><p>Demonstrating empathy and kindness toward other people</p></li>
+<li><p>Being respectful of differing opinions, viewpoints, and experiences</p></li>
+<li><p>Giving and gracefully accepting constructive feedback</p></li>
+<li><p>Accepting responsibility and apologizing to those affected by our mistakes,
+and learning from the experience</p></li>
+<li><p>Focusing on what is best not just for us as individuals, but for the overall
+community</p></li>
+</ul>
+<p>Examples of unacceptable behavior include:</p>
+<ul class="simple">
+<li><p>The use of sexualized language or imagery, and sexual attention or advances of
+any kind</p></li>
+<li><p>Trolling, insulting or derogatory comments, and personal or political attacks</p></li>
+<li><p>Public or private harassment</p></li>
+<li><p>Publishing others’ private information, such as a physical or email address,
+without their explicit permission</p></li>
+<li><p>Other conduct which could reasonably be considered inappropriate in a
+professional setting</p></li>
+</ul>
+</section>
+<section id="enforcement-responsibilities">
+<h3>Enforcement Responsibilities<a class="headerlink" href="#enforcement-responsibilities" title="Permalink to this headline"></a></h3>
+<p>Community leaders are responsible for clarifying and enforcing our standards of
+acceptable behavior and will take appropriate and fair corrective action in
+response to any behavior that they deem inappropriate, threatening, offensive,
+or harmful.</p>
+<p>Community leaders have the right and responsibility to remove, edit, or reject
+comments, commits, code, wiki edits, issues, and other contributions that are
+not aligned to this Code of Conduct, and will communicate reasons for moderation
+decisions when appropriate.</p>
+</section>
+<section id="scope">
+<h3>Scope<a class="headerlink" href="#scope" title="Permalink to this headline"></a></h3>
+<p>This Code of Conduct applies within all community spaces, and also applies when
+an individual is officially representing the community in public spaces.
+Examples of representing our community include using an official e-mail address,
+posting via an official social media account, or acting as an appointed
+representative at an online or offline event.</p>
+</section>
+<section id="enforcement">
+<h3>Enforcement<a class="headerlink" href="#enforcement" title="Permalink to this headline"></a></h3>
+<p>Instances of abusive, harassing, or otherwise unacceptable behavior may be
+reported to the community leaders responsible for enforcement by email.
+All complaints will be reviewed and investigated promptly and fairly.</p>
+<p>All community leaders are obligated to respect the privacy and security of the
+reporter of any incident.</p>
+</section>
+<section id="enforcement-guidelines">
+<h3>Enforcement Guidelines<a class="headerlink" href="#enforcement-guidelines" title="Permalink to this headline"></a></h3>
+<p>Community leaders will follow these Community Impact Guidelines in determining
+the consequences for any action they deem in violation of this Code of Conduct:</p>
+<section id="correction">
+<h4>1. Correction<a class="headerlink" href="#correction" title="Permalink to this headline"></a></h4>
+<p><strong>Community Impact</strong>: Use of inappropriate language or other behavior deemed
+unprofessional or unwelcome in the community.</p>
+<p><strong>Consequence</strong>: A private, written warning from community leaders, providing
+clarity around the nature of the violation and an explanation of why the
+behavior was inappropriate. A public apology may be requested.</p>
+</section>
+<section id="warning">
+<h4>2. Warning<a class="headerlink" href="#warning" title="Permalink to this headline"></a></h4>
+<p><strong>Community Impact</strong>: A violation through a single incident or series of
+actions.</p>
+<p><strong>Consequence</strong>: A warning with consequences for continued behavior. No
+interaction with the people involved, including unsolicited interaction with
+those enforcing the Code of Conduct, for a specified period of time. This
+includes avoiding interactions in community spaces as well as external channels
+like social media. Violating these terms may lead to a temporary or permanent
+ban.</p>
+</section>
+<section id="temporary-ban">
+<h4>3. Temporary Ban<a class="headerlink" href="#temporary-ban" title="Permalink to this headline"></a></h4>
+<p><strong>Community Impact</strong>: A serious violation of community standards, including
+sustained inappropriate behavior.</p>
+<p><strong>Consequence</strong>: A temporary ban from any sort of interaction or public
+communication with the community for a specified period of time. No public or
+private interaction with the people involved, including unsolicited interaction
+with those enforcing the Code of Conduct, is allowed during this period.
+Violating these terms may lead to a permanent ban.</p>
+</section>
+<section id="permanent-ban">
+<h4>4. Permanent Ban<a class="headerlink" href="#permanent-ban" title="Permalink to this headline"></a></h4>
+<p><strong>Community Impact</strong>: Demonstrating a pattern of violation of community
+standards, including sustained inappropriate behavior, harassment of an
+individual, or aggression toward or disparagement of classes of individuals.</p>
+<p><strong>Consequence</strong>: A permanent ban from any sort of public interaction within the
+community.</p>
+</section>
+</section>
+<section id="attribution">
+<h3>Attribution<a class="headerlink" href="#attribution" title="Permalink to this headline"></a></h3>
+<p>This Code of Conduct is adapted from the <a class="reference external" href="https://www.contributor-covenant.org">Contributor Covenant</a>,
+version <a class="reference external" href="https://www.contributor-covenant.org/version/2/1/code_of_conduct.html">2.1</a>.</p>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="report.html" class="btn btn-neutral float-left" title="Report Module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="citation.html" class="btn btn-neutral float-right" title="Citation and Attribution" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022 University of Melbourne.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
